@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CACULATOR</string>
+    <string name="result">Kết quả</string>
+    <string name="plus">+</string>
+    <string name="subtract">-</string>
+    <string name="multiply">*</string>
+    <string name="div">/</string>
+    <string name="mod">%</string>
+</resources>
