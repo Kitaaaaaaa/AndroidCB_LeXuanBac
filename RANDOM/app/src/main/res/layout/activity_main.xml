@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="10"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_weight="1"
         android:orientation="horizontal"
-        android:weightSum="2"
-        android:layout_weight="1">
+        android:weightSum="2">
+
         <Button
             android:id="@+id/btnRnum"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="Number" />
+
         <Button
             android:id="@+id/btnRDice"
             android:layout_width="0dp"
@@ -26,68 +28,75 @@
             android:layout_weight="1"
             android:text="Dice" />
     </LinearLayout>
+
     <TextView
+        android:id="@+id/txtNum"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="5"
-        android:text="Random Number"
         android:gravity="center"
-        android:id="@+id/txtNum"
-        android:visibility="visible" >
+        android:text="Random Number"
+        android:visibility="gone">
     </TextView>
+
     <ImageButton
         android:id="@+id/imgbtnDice"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="5"
-        android:src="@drawable/Dice_1"
-        android:visibility="gone"/>
+        android:src="@drawable/d1"
+        android:visibility="gone"
+        tools:ignore="SpeakableTextPresentCheck" />
+
     <LinearLayout
+        android:id="@+id/llnum"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="horizontal"
-        android:weightSum="3"
-        android:visibility="visible">
+        android:visibility="gone"
+        android:weightSum="3">
+
         <EditText
             android:id="@+id/txtL"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
             android:layout_marginLeft="50dp"
+            android:layout_weight="1"
             android:gravity="center"
-            android:text="0">
-        </EditText>
-        <TextView
+            android:text="0"></EditText>
 
+        <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="to" >
-        </TextView>
+            android:text="to"></TextView>
+
         <EditText
             android:id="@+id/txtR"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
             android:layout_marginRight="50dp"
+            android:layout_weight="1"
             android:gravity="center"
-            android:text="0">
-        </EditText>
+            android:text="0"></EditText>
     </LinearLayout>
+
     <LinearLayout
+        android:id="@+id/llcnum"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:visibility="visible">
+        android:visibility="gone">
+
         <Button
             android:id="@+id/btnRanNum"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="100dp"
             android:layout_marginRight="100dp"
-            android:text="Click" >
+            android:text="Click">
         </Button>
     </LinearLayout>
 
