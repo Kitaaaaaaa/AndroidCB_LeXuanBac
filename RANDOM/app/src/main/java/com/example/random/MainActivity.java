@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
                             r = l - r;
                             l = l - r;
                         }
-                        int v = l + ran.nextInt(r-l) ;
+                        int v = l + ran.nextInt(r-l+1) ;
                         txtRnum.setText(String.valueOf(v));
                     }
                 });
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view1) {
                         Random ran = new Random();
-                        int d= 1+ ran.nextInt(5);
+                        int d= 1+ ran.nextInt(6);
                         if(d == 1){
                             imgbtnDice.setImageResource(R.drawable.d1);
                         }
@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
                         else if (d == 5) {
                             imgbtnDice.setImageResource(R.drawable.d5);
                         }
-                        else {
+                        else if (d == 6){
                             imgbtnDice.setImageResource(R.drawable.d6);
                         }
                     }
